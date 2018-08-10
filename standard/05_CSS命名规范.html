@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS 命名规范 | Awoke</title>
+    <meta name="description" content="some notes">
+    <link rel="icon" href="/vue-press/logo.png">
+    
+    <link rel="preload" href="/vue-press/assets/css/0.styles.993a52be.css" as="style"><link rel="preload" href="/vue-press/assets/js/app.ed88ca31.js" as="script"><link rel="preload" href="/vue-press/assets/js/38.757a02b9.js" as="script"><link rel="prefetch" href="/vue-press/assets/js/85.98e66117.js"><link rel="prefetch" href="/vue-press/assets/js/1.d6b82480.js"><link rel="prefetch" href="/vue-press/assets/js/2.214a4304.js"><link rel="prefetch" href="/vue-press/assets/js/3.c4630bdb.js"><link rel="prefetch" href="/vue-press/assets/js/4.bdcfe84f.js"><link rel="prefetch" href="/vue-press/assets/js/5.bcd1021f.js"><link rel="prefetch" href="/vue-press/assets/js/6.cd3a3024.js"><link rel="prefetch" href="/vue-press/assets/js/7.00315e6f.js"><link rel="prefetch" href="/vue-press/assets/js/8.c9039cf6.js"><link rel="prefetch" href="/vue-press/assets/js/9.ffc4063d.js"><link rel="prefetch" href="/vue-press/assets/js/10.41d014f1.js"><link rel="prefetch" href="/vue-press/assets/js/11.537bbb61.js"><link rel="prefetch" href="/vue-press/assets/js/12.5789c6d4.js"><link rel="prefetch" href="/vue-press/assets/js/13.f4aea657.js"><link rel="prefetch" href="/vue-press/assets/js/14.8d4a60cd.js"><link rel="prefetch" href="/vue-press/assets/js/15.231c5288.js"><link rel="prefetch" href="/vue-press/assets/js/16.daa49e9f.js"><link rel="prefetch" href="/vue-press/assets/js/17.9990c29e.js"><link rel="prefetch" href="/vue-press/assets/js/18.3bed16df.js"><link rel="prefetch" href="/vue-press/assets/js/19.53c13146.js"><link rel="prefetch" href="/vue-press/assets/js/20.230faae5.js"><link rel="prefetch" href="/vue-press/assets/js/21.891b0471.js"><link rel="prefetch" href="/vue-press/assets/js/22.843db2a6.js"><link rel="prefetch" href="/vue-press/assets/js/23.eefcf9dc.js"><link rel="prefetch" href="/vue-press/assets/js/24.2d4dc1a4.js"><link rel="prefetch" href="/vue-press/assets/js/25.149190f8.js"><link rel="prefetch" href="/vue-press/assets/js/26.4da34131.js"><link rel="prefetch" href="/vue-press/assets/js/27.95bc0428.js"><link rel="prefetch" href="/vue-press/assets/js/28.8c0b4221.js"><link rel="prefetch" href="/vue-press/assets/js/29.0d53a6c7.js"><link rel="prefetch" href="/vue-press/assets/js/30.329c1bd2.js"><link rel="prefetch" href="/vue-press/assets/js/31.73352463.js"><link rel="prefetch" href="/vue-press/assets/js/32.b9511907.js"><link rel="prefetch" href="/vue-press/assets/js/33.2785e883.js"><link rel="prefetch" href="/vue-press/assets/js/34.1761775f.js"><link rel="prefetch" href="/vue-press/assets/js/35.e7593a0d.js"><link rel="prefetch" href="/vue-press/assets/js/36.662a6311.js"><link rel="prefetch" href="/vue-press/assets/js/37.9f5cee0d.js"><link rel="prefetch" href="/vue-press/assets/js/39.db23cfcf.js"><link rel="prefetch" href="/vue-press/assets/js/40.5ae1e250.js"><link rel="prefetch" href="/vue-press/assets/js/41.218c04d1.js"><link rel="prefetch" href="/vue-press/assets/js/42.d345807a.js"><link rel="prefetch" href="/vue-press/assets/js/43.9116eaec.js"><link rel="prefetch" href="/vue-press/assets/js/44.0299475a.js"><link rel="prefetch" href="/vue-press/assets/js/45.76254d20.js"><link rel="prefetch" href="/vue-press/assets/js/46.0c33468c.js"><link rel="prefetch" href="/vue-press/assets/js/47.163e4faf.js"><link rel="prefetch" href="/vue-press/assets/js/48.07a409f2.js"><link rel="prefetch" href="/vue-press/assets/js/49.0b16e9fa.js"><link rel="prefetch" href="/vue-press/assets/js/50.4efaa2e5.js"><link rel="prefetch" href="/vue-press/assets/js/51.85315d04.js"><link rel="prefetch" href="/vue-press/assets/js/52.4a5f093e.js"><link rel="prefetch" href="/vue-press/assets/js/53.eca2e0a0.js"><link rel="prefetch" href="/vue-press/assets/js/54.75270ebd.js"><link rel="prefetch" href="/vue-press/assets/js/55.bd78d47a.js"><link rel="prefetch" href="/vue-press/assets/js/56.57cdfcae.js"><link rel="prefetch" href="/vue-press/assets/js/57.0329b6ee.js"><link rel="prefetch" href="/vue-press/assets/js/58.4306b5fd.js"><link rel="prefetch" href="/vue-press/assets/js/59.08fcac25.js"><link rel="prefetch" href="/vue-press/assets/js/60.630c6470.js"><link rel="prefetch" href="/vue-press/assets/js/61.42c5f83c.js"><link rel="prefetch" href="/vue-press/assets/js/62.554a3727.js"><link rel="prefetch" href="/vue-press/assets/js/63.ceb4328b.js"><link rel="prefetch" href="/vue-press/assets/js/64.2ff275ca.js"><link rel="prefetch" href="/vue-press/assets/js/65.9113193e.js"><link rel="prefetch" href="/vue-press/assets/js/66.324f85bb.js"><link rel="prefetch" href="/vue-press/assets/js/67.4eee4c0a.js"><link rel="prefetch" href="/vue-press/assets/js/68.cbe3518c.js"><link rel="prefetch" href="/vue-press/assets/js/69.ac09445a.js"><link rel="prefetch" href="/vue-press/assets/js/70.44f2dc2f.js"><link rel="prefetch" href="/vue-press/assets/js/71.7ff0e0d2.js"><link rel="prefetch" href="/vue-press/assets/js/72.05065372.js"><link rel="prefetch" href="/vue-press/assets/js/73.fffba47d.js"><link rel="prefetch" href="/vue-press/assets/js/74.f786e49b.js"><link rel="prefetch" href="/vue-press/assets/js/75.f808cab5.js"><link rel="prefetch" href="/vue-press/assets/js/76.3def6f0e.js"><link rel="prefetch" href="/vue-press/assets/js/77.6d664970.js"><link rel="prefetch" href="/vue-press/assets/js/78.7470c46a.js"><link rel="prefetch" href="/vue-press/assets/js/79.825d9ebe.js"><link rel="prefetch" href="/vue-press/assets/js/80.d1429288.js"><link rel="prefetch" href="/vue-press/assets/js/81.d5581e37.js"><link rel="prefetch" href="/vue-press/assets/js/82.98cf5d8f.js"><link rel="prefetch" href="/vue-press/assets/js/83.cd5ab262.js"><link rel="prefetch" href="/vue-press/assets/js/84.a0970b1e.js"><link rel="prefetch" href="/vue-press/assets/js/86.06c742b2.js"><link rel="prefetch" href="/vue-press/assets/js/87.a8785da4.js"><link rel="prefetch" href="/vue-press/assets/js/88.9f5dea0d.js"><link rel="prefetch" href="/vue-press/assets/js/89.a4adf3a0.js"><link rel="prefetch" href="/vue-press/assets/js/90.002117b4.js"><link rel="prefetch" href="/vue-press/assets/js/91.8f66cd4a.js"><link rel="prefetch" href="/vue-press/assets/js/92.1ac1f41b.js"><link rel="prefetch" href="/vue-press/assets/js/93.7577eb42.js"><link rel="prefetch" href="/vue-press/assets/js/94.a055528c.js"><link rel="prefetch" href="/vue-press/assets/js/95.79e72049.js"><link rel="prefetch" href="/vue-press/assets/js/96.417d2da5.js"><link rel="prefetch" href="/vue-press/assets/js/97.6f5c5707.js"><link rel="prefetch" href="/vue-press/assets/js/98.cb755041.js"><link rel="prefetch" href="/vue-press/assets/js/99.be6f37b6.js"><link rel="prefetch" href="/vue-press/assets/js/100.3defd116.js"><link rel="prefetch" href="/vue-press/assets/js/101.f6d67ac8.js"><link rel="prefetch" href="/vue-press/assets/js/102.0fac26c8.js"><link rel="prefetch" href="/vue-press/assets/js/103.4b183066.js"><link rel="prefetch" href="/vue-press/assets/js/104.940c7f3e.js"><link rel="prefetch" href="/vue-press/assets/js/105.2b44ae6d.js"><link rel="prefetch" href="/vue-press/assets/js/106.36665800.js"><link rel="prefetch" href="/vue-press/assets/js/107.7a801502.js"><link rel="prefetch" href="/vue-press/assets/js/108.245c615d.js"><link rel="prefetch" href="/vue-press/assets/js/109.0c7eef45.js"><link rel="prefetch" href="/vue-press/assets/js/110.3429b96d.js"><link rel="prefetch" href="/vue-press/assets/js/111.9653ff0a.js"><link rel="prefetch" href="/vue-press/assets/js/112.1b869474.js"><link rel="prefetch" href="/vue-press/assets/js/113.8cf6cde4.js"><link rel="prefetch" href="/vue-press/assets/js/114.3fd38f98.js"><link rel="prefetch" href="/vue-press/assets/js/115.284916fe.js"><link rel="prefetch" href="/vue-press/assets/js/116.79153275.js"><link rel="prefetch" href="/vue-press/assets/js/117.ee0f5af4.js"><link rel="prefetch" href="/vue-press/assets/js/118.9e8734d0.js"><link rel="prefetch" href="/vue-press/assets/js/119.0387e7f6.js"><link rel="prefetch" href="/vue-press/assets/js/120.ab9090ec.js"><link rel="prefetch" href="/vue-press/assets/js/121.4a10a297.js"><link rel="prefetch" href="/vue-press/assets/js/122.05d5b6d2.js"><link rel="prefetch" href="/vue-press/assets/js/123.ef16281f.js"><link rel="prefetch" href="/vue-press/assets/js/124.bf44bc0a.js"><link rel="prefetch" href="/vue-press/assets/js/125.9f342229.js"><link rel="prefetch" href="/vue-press/assets/js/126.3d19e646.js"><link rel="prefetch" href="/vue-press/assets/js/127.6c77477b.js"><link rel="prefetch" href="/vue-press/assets/js/128.3d9e580e.js"><link rel="prefetch" href="/vue-press/assets/js/129.fe965f7d.js"><link rel="prefetch" href="/vue-press/assets/js/130.0f88ec60.js"><link rel="prefetch" href="/vue-press/assets/js/131.ffa92b06.js"><link rel="prefetch" href="/vue-press/assets/js/132.7bd1e073.js"><link rel="prefetch" href="/vue-press/assets/js/133.d27dcb9a.js"><link rel="prefetch" href="/vue-press/assets/js/134.48d12e73.js"><link rel="prefetch" href="/vue-press/assets/js/135.3ecabf8a.js"><link rel="prefetch" href="/vue-press/assets/js/136.37c2afa9.js"><link rel="prefetch" href="/vue-press/assets/js/137.382145a8.js"><link rel="prefetch" href="/vue-press/assets/js/138.b46265e5.js"><link rel="prefetch" href="/vue-press/assets/js/139.6f7d5d7e.js"><link rel="prefetch" href="/vue-press/assets/js/140.929f645b.js"><link rel="prefetch" href="/vue-press/assets/js/141.6a50e198.js"><link rel="prefetch" href="/vue-press/assets/js/142.dd315992.js"><link rel="prefetch" href="/vue-press/assets/js/143.8f40bb04.js"><link rel="prefetch" href="/vue-press/assets/js/144.9242199e.js"><link rel="prefetch" href="/vue-press/assets/js/145.2c1cf654.js"><link rel="prefetch" href="/vue-press/assets/js/146.1417a782.js"><link rel="prefetch" href="/vue-press/assets/js/147.ea3cd24b.js"><link rel="prefetch" href="/vue-press/assets/js/148.8eeb230e.js"><link rel="prefetch" href="/vue-press/assets/js/149.b0caf55f.js"><link rel="prefetch" href="/vue-press/assets/js/150.48855548.js"><link rel="prefetch" href="/vue-press/assets/js/151.c55b3a1b.js"><link rel="prefetch" href="/vue-press/assets/js/152.aecb173f.js"><link rel="prefetch" href="/vue-press/assets/js/153.5b069fea.js"><link rel="prefetch" href="/vue-press/assets/js/154.8adbcf69.js"><link rel="prefetch" href="/vue-press/assets/js/155.973feb58.js"><link rel="prefetch" href="/vue-press/assets/js/156.811f3b0a.js"><link rel="prefetch" href="/vue-press/assets/js/157.f44f40dd.js"><link rel="prefetch" href="/vue-press/assets/js/158.e485326d.js"><link rel="prefetch" href="/vue-press/assets/js/159.5c4c757e.js"><link rel="prefetch" href="/vue-press/assets/js/160.ca6e9b31.js"><link rel="prefetch" href="/vue-press/assets/js/161.80258c66.js"><link rel="prefetch" href="/vue-press/assets/js/162.494b5328.js"><link rel="prefetch" href="/vue-press/assets/js/163.16a06b5b.js"><link rel="prefetch" href="/vue-press/assets/js/164.35c6682c.js"><link rel="prefetch" href="/vue-press/assets/js/165.dcd0fbf5.js"><link rel="prefetch" href="/vue-press/assets/js/166.72265c18.js"><link rel="prefetch" href="/vue-press/assets/js/167.4627f96e.js"><link rel="prefetch" href="/vue-press/assets/js/168.45945750.js"><link rel="prefetch" href="/vue-press/assets/js/169.5a36741b.js"><link rel="prefetch" href="/vue-press/assets/js/170.406d346c.js"><link rel="prefetch" href="/vue-press/assets/js/171.ead7d357.js"><link rel="prefetch" href="/vue-press/assets/js/172.4980210c.js"><link rel="prefetch" href="/vue-press/assets/js/173.15fba64a.js"><link rel="prefetch" href="/vue-press/assets/js/174.39bc88ab.js"><link rel="prefetch" href="/vue-press/assets/js/175.6b7c1f3a.js"><link rel="prefetch" href="/vue-press/assets/js/176.ce6bda10.js"><link rel="prefetch" href="/vue-press/assets/js/177.b5057595.js"><link rel="prefetch" href="/vue-press/assets/js/178.b57c905c.js"><link rel="prefetch" href="/vue-press/assets/js/179.3489e70e.js"><link rel="prefetch" href="/vue-press/assets/js/180.acc6c896.js"><link rel="prefetch" href="/vue-press/assets/js/181.956b5774.js"><link rel="prefetch" href="/vue-press/assets/js/182.0c861370.js"><link rel="prefetch" href="/vue-press/assets/js/183.963ab272.js"><link rel="prefetch" href="/vue-press/assets/js/184.2ebd9e63.js"><link rel="prefetch" href="/vue-press/assets/js/185.6fa37ff2.js"><link rel="prefetch" href="/vue-press/assets/js/186.9b26cc48.js"><link rel="prefetch" href="/vue-press/assets/js/187.175a8b73.js"><link rel="prefetch" href="/vue-press/assets/js/188.c1ce6686.js"><link rel="prefetch" href="/vue-press/assets/js/189.f1a76a79.js"><link rel="prefetch" href="/vue-press/assets/js/190.eba5f476.js"><link rel="prefetch" href="/vue-press/assets/js/191.6c6c809d.js"><link rel="prefetch" href="/vue-press/assets/js/192.13d728f0.js"><link rel="prefetch" href="/vue-press/assets/js/193.e3fec485.js"><link rel="prefetch" href="/vue-press/assets/js/194.de74979c.js"><link rel="prefetch" href="/vue-press/assets/js/195.9fe16ec5.js"><link rel="prefetch" href="/vue-press/assets/js/196.0074ac36.js"><link rel="prefetch" href="/vue-press/assets/js/197.202bc0ca.js"><link rel="prefetch" href="/vue-press/assets/js/198.d3eeec65.js"><link rel="prefetch" href="/vue-press/assets/js/199.7204ac68.js"><link rel="prefetch" href="/vue-press/assets/js/200.328fedce.js">
+    <link rel="stylesheet" href="/vue-press/assets/css/0.styles.993a52be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/vue-press/" class="home-link router-link-active"><!----><span class="site-name">
+      Awoke
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-press/vue/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/vue-press/notes/" class="nav-link">Notes</a></div><div class="nav-item"><a href="http://nav.gaodaqian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Nav
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/awokelee" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/vue-press/standard/" class="nav-link router-link-active">.</a></div><div class="nav-item"><a href="/vue-press/booklet/" class="nav-link">.</a></div><div class="nav-item"><a href="/vue-press/interview/" class="nav-link">.</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-press/vue/" class="nav-link">Vue</a></div><div class="nav-item"><a href="/vue-press/notes/" class="nav-link">Notes</a></div><div class="nav-item"><a href="http://nav.gaodaqian.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Nav
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/awokelee" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/vue-press/standard/" class="nav-link router-link-active">.</a></div><div class="nav-item"><a href="/vue-press/booklet/" class="nav-link">.</a></div><div class="nav-item"><a href="/vue-press/interview/" class="nav-link">.</a></div><!----></nav><ul class="sidebar-links"><li><a href="/vue-press/standard/" class="sidebar-link">规范</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>中文技术文档的写作规范</span><span class="arrow right"></span></p><!----></div></li><li><a href="/vue-press/standard/01_commit-message规范.html" class="sidebar-link">Git 提交注释规范</a></li><li><a href="/vue-press/standard/02_文件名规范.html" class="sidebar-link">文件名规范</a></li><li><a href="/vue-press/standard/03_文件夹命名参考.html" class="sidebar-link">文件夹命名参考</a></li><li><a href="/vue-press/standard/04_HTML命名参考.html" class="sidebar-link">HTML 命名参考</a></li><li><a href="/vue-press/standard/05_CSS命名规范.html" class="active sidebar-link">CSS 命名规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#书写顺序" class="sidebar-link">书写顺序</a></li><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#相对网页外层重要部分css样式命名" class="sidebar-link">相对网页外层重要部分CSS样式命名</a></li><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#div-css命名参考表" class="sidebar-link">DIV+CSS命名参考表</a></li><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#css命名其它说明" class="sidebar-link">CSS命名其它说明</a></li><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#css样式文件命名如下" class="sidebar-link">CSS样式文件命名如下</a></li><li class="sidebar-sub-header"><a href="/vue-press/standard/05_CSS命名规范.html#css标准化设计命名" class="sidebar-link">CSS标准化设计命名</a></li></ul></li><li><a href="/vue-press/standard/06_CSS命名参考.html" class="sidebar-link">CSS 命名参考</a></li><li><a href="/vue-press/standard/07_JS函数方法常用的动词.html" class="sidebar-link">JavaScript 函数常用的动词</a></li><li><a href="/vue-press/standard/08_图片命名参考.html" class="sidebar-link">图片命名</a></li><li><a href="/vue-press/standard/09_图片的命名规范及脚本文件和动态文件命名规范.html" class="sidebar-link">图片的命名规范及脚本文件和动态文件命名规范</a></li><li><a href="/vue-press/standard/10_代码review检查点.html" class="sidebar-link">前端 Code Review 清单</a></li></ul></div><div class="page"><div class="content"><h1 id="css-命名规范"><a href="#css-命名规范" aria-hidden="true" class="header-anchor">#</a> CSS 命名规范</h1><h2 id="书写顺序"><a href="#书写顺序" aria-hidden="true" class="header-anchor">#</a> 书写顺序</h2><div class="language-text extra-class"><pre class="language-text"><code>显示属性
+元素属性
+内容属性
+
+
+位置属性(position, top, right, z-index, display, float等)
+大小(width, height, padding, margin)
+文字系列(font, line-height, letter-spacing, color- text-align等)
+背景(background, border等)
+其他(animation, transition等)
+</code></pre></div><h2 id="相对网页外层重要部分css样式命名"><a href="#相对网页外层重要部分css样式命名" aria-hidden="true" class="header-anchor">#</a> 相对网页外层重要部分CSS样式命名</h2><div class="language-text extra-class"><pre class="language-text"><code>外套 wrap ------------------用于最外层头部
+header ---------------用于头部主要内容
+main ------------用于主体内容（中部
+左侧 main-left -------------左侧布局右侧
+main-right -----------右侧布局导航条
+nav -----------------网页菜单导航条内容
+content --------------用于网页中部主体底部
+footer -----------------用于底部
+</code></pre></div><h2 id="div-css命名参考表"><a href="#div-css命名参考表" aria-hidden="true" class="header-anchor">#</a> DIV+CSS命名参考表</h2><div class="language-text extra-class"><pre class="language-text"><code>①CSS样式命名说明网页公共命名
+#wrapper页面外围控制整体布局宽度
+#container或#content容器；
+②
+用于最外层
+#layout布局
+#head, #header页头部分
+#foot, #footer页脚部分
+#nav主导航#subnav二级导航
+#menu菜单#submenu子菜单
+#sideBar侧栏
+#sidebar_a, #sidebar_b左边栏或右边栏
+#main页面主体
+#tag标签
+#msg #message提示信息
+#tips小技巧
+#vote投票
+#friendlink友情连接
+#title标题；
+③
+#summary摘要
+#loginbar登录条
+#searchInput搜索输入框
+#hot热门热点
+#search搜索
+#search_output搜索输出和搜索结果相似
+#searchBar搜索条
+#search_results搜索结果
+#copyright版权信息
+#branding
+④
+商标#logo网站LOGO标志
+#siteinfo网站信息
+#siteinfoLegal法律声明
+#siteinfoCredits信誉
+#joinus加入我们
+#partner合作伙伴
+#service服务
+#regsiter注册arr/arrow箭头
+#guild指南
+#sitemap网站地图
+#list列表
+#homepage首页
+#subpage二级页面子页面
+#tool, #toolbar工具条
+#drop下拉
+#dorpmenu下拉菜单
+⑤
+#status状态
+#scroll滚动
+.tab标签页
+.left .right .center居左、中、右
+.news新闻
+.download下载
+.banner广告条(顶部广告条)电子贸易相关
+.products产品
+.products_prices产品价格
+.products_description产品描述
+.products_review产品评论
+.editor_review编辑评论
+.news_release最新产品
+.publisher生产商
+.screenshot缩略图
+.faqs常见问题
+.keyword关键词
+.blog博客
+.forum论坛
+⑥
+CSS文件命名说明
+master.css,style.css主要的
+module.css模块
+base.css基本共用
+layout.css布局，
+版面themes.css主题
+columns.css专栏
+font.css文字、字体
+forms.css表单
+mend.css补丁
+print.css打印
+</code></pre></div><h2 id="css命名其它说明"><a href="#css命名其它说明" aria-hidden="true" class="header-anchor">#</a> CSS命名其它说明</h2><div class="language-text extra-class"><pre class="language-text"><code>DIV+CSS命名小结：无论是使用“.”（小写句号）选择符号开头命名，还是使用“#”(井号)选择符号开头命名都无所谓，但我们最好遵循，
+主要的、重要的、特殊的、最外层的盒子用“#”(井号)选择符号开头命名，其它都用“.”（小写句号）选择符号开头命名，
+同时考虑命名的CSS选择器在HTML中重复使用调用。
+通常我们最常用主要命名有：
+wrap（外套、最外层）、
+header（页眉、头部）、
+nav(导航条)、menu(菜单)、
+title(栏目标题、一般配合h1\h2\h3\h4标签使用)、
+content (内容区)、
+footer(页脚、底部)、
+logo（标志、可以配合h1标签使用）、
+banner（广告条，一般在顶部）、
+copyRight（版权）。
+其它可根据自己需要选择性使用。建议：主要的、重要的、最外层的盒子用“#”(井号)选择符号开头命名，其它都用“.”（小写句号）选择符号开头命名。
+</code></pre></div><h2 id="css样式文件命名如下"><a href="#css样式文件命名如下" aria-hidden="true" class="header-anchor">#</a> CSS样式文件命名如下</h2><div class="language-text extra-class"><pre class="language-text"><code>主要的 master.css
+
+布局，版面 layout.css
+
+专栏 columns.css
+
+文字 font.css
+
+打印样式 print.css
+
+主题 themes.css
+</code></pre></div><h2 id="css标准化设计命名"><a href="#css标准化设计命名" aria-hidden="true" class="header-anchor">#</a> CSS标准化设计命名</h2><div class="language-text extra-class"><pre class="language-text"><code>CSS标准化设计命名
+1、类class的命名规范示例
+头：header内容：content/container
+尾：footer
+导航：nav
+侧栏：sidebar
+栏目：column
+页面外围控制整体布局宽度：wrapper
+左右中：left right center
+登录条：loginbar
+标志：logo
+广告：banner
+页面主体：main
+热点：hot
+新闻：news
+下载：download
+子导航：subnav
+菜单：menu
+子菜单：submenu
+搜索：search
+友情链接：friendlink
+页脚：footer
+版权：copyright
+滚动：scroll
+内容：content
+标签页：tab
+文章列表：list
+提示信息：msg
+小技巧：tips
+栏目标题：title
+加入：joinus
+指南：guild
+服务：service
+注册：regsiter
+状态：status
+投票：vote
+合作伙伴：partner
+
+
+3、id的命名规范示例
+（1）
+页面结构容器： container
+页头：header
+内容：content/container
+页面主体：main
+页尾：footer
+导航：nav
+侧栏：sidebar
+栏目：column
+页面外围控制整体布局宽度：wrapper
+左右中：left right center
+（2）
+导航导航：nav
+主导航：mainbav
+子导航：subnav
+顶导航：topnav
+边导航：sidebar
+左导航：leftsidebar
+右导航：rightsidebar
+菜单：menu
+子菜单：submenu
+标题： title
+摘要： summary
+（3）
+功能标志：logo
+广告：banner
+登陆：login
+登录条：loginbar
+注册：regsiter
+搜索：search
+功能区：shop
+标题：title
+加入：joinus
+状态：status
+按钮：btn
+滚动：scroll
+标签页：tab
+文章列表：list
+提示信息：msg
+当前的： current
+小技巧：tips
+图标： icon
+注释：note
+指南：guild
+服务：service
+热点：hot
+新闻：news
+下载：download
+投票：vote
+合作伙伴：partner
+友情链接：link
+版权：copyright
+4、
+类class的书写规范示例
+（1）颜色：使用颜色的名称或者16进制代码，如.red { color： red； }.f60 { color： #f60； }.ff8600 { color： #ff8600； }（2）字体大小，直接使用&quot;font+字体大小&quot;作为名称，如.font12px { font-size： 12px； }.font9pt {font-size： 9pt； }
+（3）对齐样式，使用对齐目标的英文名称，如.left { float：left； }.bottom { float：bottom； }
+（4）标题栏样式，使用&quot;类别+功能&quot;的方式命名，如.barnews { }.barproduct { }
+5、CSS文件命名示例主要的 master.css模块 module.css基本共用 base.css布局，版面 layout.css主题 themes.css专栏 columns.css文字 font.css表单 forms.css补丁 mend.css打印 print.css6、注意事项
+（1）一律小写；
+（2）尽量用英文；
+（3）不加中杠和下划线；
+（4）尽量不缩写，除非一看就明白的单词css统一命名注：本CSS命名规则只适合物table制作模式下
+1、 css文件统一放在css文件夹下；命名css.css
+2、 主样式定义：body、table、td、tr、a
+3、 链接样式定义：link_white（白色）；link_black （黑色）；link_blue （蓝色） 等等；说明：如有重复的后面加阿拉伯数字；如 link_red01 有下划线的如：linkred
+4、 文字样式定义：font_red （红色）；font_red_14 （红色14号字）；font_red_14b （红色14号加粗）
+5、 边框样式定义：border_red_tblr （红色四个边）；border_red_blr（红色底左右三边）；border_red_lr（红色左右两个边）；border_red_b （红色底一个边）等等；
+6、 表单样式定义：
+ext_100 （文本字段宽为100）； 
+textarea_200_red （文本区域宽为200有红色边框）；
+select_100 （列表宽为100）；
+button_150 （按钮宽150）；
+说明：表单用宽度定义，在命名中最长写到：“text_100_red”
+7、
+线的样式定义：line_X （横线）；line_Y （竖线）；line_X_red （红色横线）；
+line_X_red2 （两个像素的红色横线）；
+说明：在line中只定义虚线，实线在border中定义
+8、 其它样式定义：在这里主要定义一些个性化的样式；
+常用的css命名规则头：
+header内容：
+content/container尾：
+footer导航：
+nav侧栏：
+sidebar栏目：
+column页面外围控制整体布局宽度：
+wrapper左右中：
+left right center
+登录条：loginbar
+标志：logo
+广告：banner
+页面主体：main
+热点：hot
+新闻：news
+下载：download
+子导航：subnav
+菜单：menu
+子菜单：submenu
+搜索：search
+友情链接：friendlink
+页脚：footer
+版权：copyright
+滚动：scroll
+内容：content
+标签页：tab
+文章列表：list
+提示信息：msg
+小技巧：tips
+栏目标题：title
+加入：joinus
+指南：guild
+服务：service
+注册：regsiter
+状态：status
+投票：vote
+合作伙伴：partner
+(二)
+注释的写法:
+/* Footer */
+内容区
+/* End Footer */
+(三)
+id的命名:
+(1)
+页面结构容器: container
+页头：header
+内容：content/container
+页面主体：main
+页尾：footer
+导航：nav
+侧栏：sidebar
+栏目：column
+页面外围控制整体布局宽度：wrapper
+左右中：left right center
+(2)
+导航导航：nav
+主导航：mainbav
+子导航：subnav
+顶导航：topnav
+边导航：sidebar
+左导航：leftsidebar
+右导航：rightsidebar
+菜单：menu
+子菜单：submenu
+标题: title
+摘要: summary
+(3)
+功能标志：logo
+广告：banner
+登陆：login
+登录条：loginbar
+注册：regsiter
+搜索：search
+功能区：shop
+标题：title
+加入：joinus
+状态：status
+按钮：btn
+滚动：scroll
+标签页：tab
+文章列表：list
+提示信息：msg
+当前的: current
+小技巧：tips
+图标: icon
+注释：note
+指南：guild
+服务：service
+热点：hot
+新闻：news
+下载：download
+投票：vote
+合作伙伴：partner
+友情链接：link
+版权：copyright
+(四)
+class的命名:
+(1)颜色:使用颜色的名称或者16进制代码,如.red { color: red; }.f60 { color: #f60; }.ff8600 { color: #ff8600; }
+（2）字体大小,直接使用”font+字体大小”作为名称,如.font12px { font-size: 12px; }.font9pt {font-size: 9pt; }
+(3)对齐样式,使用对齐目标的英文名称,如.left { float:left; }.bottom { float:bottom; }
+(4)标题栏样式,使用”类别+功能”的方式命名,如.barnews { }.barproduct { }注意事项::
+1.一律小写;
+2.尽量用英文;
+3.不加中杠和下划线;
+4.尽量不缩写，除非一看就明白的单词.主要的 master.css模块 module.css基本共用 base.css布局，版面 layout.css主题 themes.css专栏 columns.css文字 font.css表单 forms.css补丁 mend.css打印 print.css
+</code></pre></div><div class="language-text extra-class"><pre class="language-text"><code>  1. 内容优先,表现为辅
+  2. css命名中英文对照
+  current 当前
+  hover 悬停
+  selected 挑选
+  disabled 禁用
+  focus 得到焦点
+  blur 失去焦点
+  checked 勾选
+  success 成功
+  error 出错
+
+  header(hd) 头部
+  content(cnt) 内容
+  title(tit) 标题
+  item 项目（条）
+  cell 单元
+  image/pic(img) 图片
+  text(txt) 文字
+  top 顶部
+  scrubber 时序菜单
+
+  nav 导航
+  mainnav 主导航
+  subnav 子导航
+  topnav 顶部导航
+  breadcrumb 面包屑导航
+
+  flink 友情链接
+  footer 尾
+  copyright 版权
+
+  menu 菜单
+  submenu 子菜单
+  dropdown 下拉菜单
+
+  searchBar 搜索条
+  search 搜索条
+  searchTxt 搜索框
+  searchBtn 搜索按钮
+  search_key 搜索词
+
+  member 会员
+  ucenter 用户中心
+  loginBar 登陆条
+  login 登录
+  loginBtn 登录按钮
+  regsiter 注册按钮
+  btn-regsiter注册按钮
+  name 用户名
+  password 密码
+  nickname 昵称
+  mobilephone/mobile 手机
+  telephone/tel 电话
+  defaultavatar 默认头像
+
+  hot 热点
+  news 新闻
+  banner/AD 广告
+  download 下载
+
+  content 内容
+  title 标题
+  summary 摘要
+  time 时间
+
+  share 分享
+  digg 顶
+  like 喜欢
+
+  list 列表
+  pList 图片列表
+  tList 文字列表
+  tpList 图文列表
+
+  table 表格
+  row 行
+  column 列
+  gutter 间隔
+  viewport 视口
+
+  tab 标签
+  tags 标签
+  scroll 滚动 
+
+  sidebar 侧边栏
+  column 栏目
+  section 区块
+  msg 提示信息
+  status 状态
+  vote 投票
+  tips 小技巧
+  guild 指南
+  note 注释
+
+  icon- 图标
+  btn- 按钮
+
+  goods 商品
+  goodsList 商品列表
+  goodsDetail 商品详情
+  goodsInfo 商品信息
+
+  tuan 团购
+  tuanList 团购列表
+  tuanDetail  团购详情
+  tuanInfo 团购信息
+
+  transition 动画
+  shadow 阴影
+  fade 淡入淡出
+  flip 翻页效
+  slide 滑动
+  slideup 上滑动
+  slidedown 下滑动
+  turn 翻页
+  horizontal 水平
+  vertical 垂直
+  collapsible 折叠
+  corners 拐角
+  flow 流
+  reverse 反向
+  pop 弹窗
+
+  count 总数/计数
+  plus 加号/正
+  minus 减号/负
+  controlgroup 控制组
+</code></pre></div></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
+    <script src="/vue-press/assets/js/38.757a02b9.js" defer></script><script src="/vue-press/assets/js/app.ed88ca31.js" defer></script>
+  </body>
+</html>
